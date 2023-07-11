@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - A Pen by Jose Betancourt</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Google</title>
+    <link rel="stylesheet" href="google.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="loginContainer" class="container">
-  <h1>Iniciar sesión</h1>
-  <form id="loginForm">
-    <label for="username">Nombre de usuario:</label>
-    <input type="text" id="username" name="username" required>
-    <br>
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password" required>
-    <br>
-    <input type="submit" value="Iniciar sesión">
-  </form>
-</div>
+    <div class="box">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Logo de Google">
+        </div>
+        <h2>Inicia sesión</h2>
+        <p>Utiliza tu cuenta de Google</p>
+        <form>
+            <div class="inputBox">
+                <i class="fas fa-user"></i>
+                <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Correo electrónico o teléfono</label>
+            </div>
+            <div class="inputBox">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" required onkeyup="this.setAttribute('value', this.value);" value="">
+                <label>Contraseña</label>
+            </div>
+            <div class="buttonBox">
+                <input type="button" name="create-account" value="Crear cuenta">
+                <input type="submit" name="sign-in" value="Iniciar sesión">
+            </div>
+            <div class="options">
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </div>
+        </form>
+    </div>
 
-<div id="profileContainer" class="container hidden">
-  <h2>Mi perfil</h2>
-  <div id="usernameDisplay"></div>
-  <br>
-  <button id="createPostButton">Crear publicación</button>
-  <button id="logoutButton">Cerrar sesión</button>
-
-</div>
-
-<div id="postForm" class="container hidden">
-  <h2>Crear publicación</h2>
-  <form id="createPostForm">
-    <textarea id="postContent" name="postContent" required></textarea>
-    <br>
-    <input type="submit" value="Publicar">
-  </form>
-</div>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+    <!-- Agrega los scripts necesarios para Font Awesome -->
+    <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
 </body>
 </html>
